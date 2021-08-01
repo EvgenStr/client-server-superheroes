@@ -5,3 +5,5 @@ const httpClient = axios.create({
 });
 
 export const createHero = data => httpClient.post('/superheroes', data);
+
+export const getHeroes = () => httpClient.get('/superheroes');
