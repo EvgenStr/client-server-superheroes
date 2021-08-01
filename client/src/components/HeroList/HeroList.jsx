@@ -12,7 +12,7 @@ function HeroList (props) {
     getHeroesRequest();
   }, []);
 
-  console.log(heroes, isFetching, 'comp');
+  // console.log(heroes, isFetching, 'comp');
 
   const heroesCards = heroes.map(hero => (
     <HeroCard key={hero.id} hero={hero} />

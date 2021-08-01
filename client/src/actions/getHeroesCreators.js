@@ -1,6 +1,5 @@
 import ACTION_TYPES from './actionTypes';
 
-
 export const getHeroesRequest = () => ({
   type: ACTION_TYPES.GET_HEROES_REQUEST,
 });
