@@ -161,7 +161,7 @@ module.exports.getAllSuperheroes = async (req, res, next) => {
       include: [
         {
           model: Superpower,
-          attributes: ['id', 'superpower'],
+          attributes: ['id', 'name'],
           through: {
             attributes: [],
           },
