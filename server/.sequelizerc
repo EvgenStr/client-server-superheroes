@@ -1,0 +1,6 @@
+const path = require('path');
+const { DB_CONFIG } = require('./config/config');
+
+module.exports = {
+  config: DB_CONFIG,
+};
