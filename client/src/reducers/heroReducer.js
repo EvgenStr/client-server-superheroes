@@ -25,6 +25,19 @@ function heroReducer (state = initialState, action) {
         error: action.error,
       };
     }
+    case ACTION_TYPES.GET_HEROES_REQUEST: {
+      return { ...state, isFetching: true };
+    }
+    case ACTION_TYPES.GET_HEROES_SUCCESS: {
+      return { ...state, heroes: action.values, isFetching: false };
+    }
+    case ACTION_TYPES.GET_HEROES_ERROR: {
+      return {
+        ...state,
+        isFetching: false,
+        error: action.error,
+      };
+    }
     default: {
       return state;
     }
